@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soham Singh — CS Student & Web Developer</title>
+    <meta name="description" content="Portfolio of Soham Singh, a Computer Science student at Scaler School of Technology (BITS Pilani) who builds clean and interactive web experiences with HTML and CSS.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <div class="intro" aria-hidden="true"><span>Soham Singh</span><i></i></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="icon-github" viewBox="0 0 24 24">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </symbol>
+    </svg>
+    <input type="checkbox" id="theme" class="state" aria-label="Toggle light / dark theme">
+    <input type="checkbox" id="menu" class="state" aria-label="Toggle navigation menu">
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#top" class="logo" aria-label="Soham Singh, back to top">SS<span>.</span></a>
+            <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#journey">Journey</a></li><li><a href="#work">Work</a></li><li><a href="#contact">Contact</a></li></ul>
+            <div class="nav-actions">
+                <label for="theme" class="icon-btn theme-btn" title="Switch light / dark">
+                    <span class="sun" aria-hidden="true">☀</span>
+                    <span class="moon" aria-hidden="true">☾</span>
+                </label>
+                <a href="https://github.com/SoulInVoid" class="btn btn-small" target="_blank" rel="noopener">
+                    <svg class="gh-icon" aria-hidden="true"><use href="#icon-github"/></svg> GitHub ↗
+                </a>
+                <label for="menu" class="icon-btn burger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero container">
+            <div class="blob blob-1" aria-hidden="true"></div>
+            <div class="blob blob-2" aria-hidden="true"></div>
+            <p class="tag fade-up" style="--d:0s"><span class="dot"></span> Student · Scaler School of Technology</p>
+            <h1 class="hero-name fade-up" style="--d:.1s">Soham <span class="accent">Singh</span></h1>
+            <p class="hero-tagline fade-up" style="--d:.2s">
+                Computer Science student building <strong>clean and interactive web experiences</strong> with HTML &amp; CSS.
+            </p>
+            <p class="typing">&gt; building with HTML, CSS &amp; Python</p>
+            <div class="hero-cta fade-up" style="--d:.3s">
+                <a href="#work" class="btn btn-primary">See the work</a>
+                <a href="#github-link" class="btn btn-ghost">
+                    <svg class="gh-icon" aria-hidden="true"><use href="#icon-github"/></svg> GitHub ↓
+                </a>
+            </div>
+            <ul class="stats fade-up" style="--d:.4s">
+                <li><strong>3</strong><span>projects</span></li>
+                <li><strong>2</strong><span>core technologies</span></li>
+                <li><strong>0</strong><span>lines of JavaScript</span></li>
+            </ul>
+        </section>
+        <section id="about" class="section container">
+            <p class="section-label reveal">About</p>
+            <div class="about">
+                <div class="avatar reveal" title="Hover me">
+                    <div class="avatar-inner">
+                        <span class="face front">SS</span>
+                        <div class="face back" aria-label="Waving hello emoji" role="img">
+                            <span class="wave-emoji">👋</span>
+                        </div>
+                    </div>
+                    <p class="avatar-hint"></p>
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-title">Hi there!</h2>
+                    <p>I'm Soham, a Computer Science student at <strong>Scaler School of Technology</strong>, pursuing my BSc in Computer Science from <strong>BITS Pilani</strong>.</p>
+                    <p>I'm interested in frontend development and building interactive web experiences. I enjoy learning by building projects and experimenting with new ideas.</p>
+                    <p>So far I've built an interactive size-comparison website called The Scale of Everything, a mini interactive game with just HTML and CSS, and a voice assistant called Axion with Python.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section container">
+            <p class="section-label reveal">Toolbox</p>
+            <h2 class="section-title reveal">What I build with</h2>
+            <div class="skill-list reveal">
+                <div class="skill-row">
+                    <h3>Frontend</h3>
+                    <ul class="pills"><li>HTML</li><li>CSS</li><li>Flexbox</li><li>Grid</li><li>Responsive Design</li><li>Animations</li></ul>
+                </div>
+                <div class="skill-row">
+                    <h3>Tools &amp; languages</h3>
+                    <ul class="pills"><li>Python</li><li>Git</li><li>GitHub</li><li>VS Code</li></ul>
+                </div>
+                <div class="skill-row">
+                    <h3>Currently learning</h3>
+                    <ul class="pills pills-dashed"><li>JavaScript</li><li>React</li><li>Node.js</li></ul>
+                </div>
+            </div>
+        </section>
+        <section id="journey" class="section container">
+            <p class="section-label reveal">Journey</p>
+            <h2 class="section-title reveal">Where I've been</h2>
+            <div class="jobs reveal">
+                <details class="job">
+                    <summary><span class="job-date">Currently pursuing</span> <span class="job-title"><strong>BSc in Computer Science</strong><span>BITS Pilani</span></span> <span class="job-toggle"></span></summary>
+                    <div class="job-body">
+                        <p>Pursuing my BSc in Computer Science from BITS Pilani while studying at Scaler School of Technology.</p>
+                    </div>
+                </details>
+                <details class="job">
+                    <summary><span class="job-date">Currently studying</span> <span class="job-title"><strong>Scaler School of Technology</strong><span>Computer Science</span></span> <span class="job-toggle"></span></summary>
+                    <div class="job-body">
+                        <p>Learning computer science hands-on, and turning each new concept into something I can actually build.</p>
+                    </div>
+                </details>
+                <details class="job">
+                    <summary><span class="job-date">Now</span> <span class="job-title"><strong>Web Development journey</strong><span>HTML · CSS · Python</span></span> <span class="job-toggle"></span></summary>
+                    <div class="job-body">
+                        <p>Currently learning and building projects as part of my Web Development journey: a size-comparison website, a mini game and a Python voice assistant so far.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+        <section id="work" class="section container">
+            <p class="section-label reveal">Selected work</p>
+            <h2 class="section-title reveal">Three things worth opening</h2>
+            <div class="projects-grid">
+                <article class="card project reveal">
+                    <div class="preview preview-scale" aria-hidden="true"><span class="scale-value">10⁻³⁵ m → 10²⁶ m</span><div class="scale-ruler"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+                    <div class="project-body">
+                        <p class="project-meta">01 · Website</p> <h3>The Scale of Everything</h3> <p class="project-sub">From the Planck length to the observable universe</p>
+                        <p>An interactive logarithmic ruler to explore, compare and search the size of everything, with human view, unit switching and learn mode.</p>
+                        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li></ul>
+                        <div class="project-links"><a href=" https://soulinvoid.github.io/cosmic-scale/" target="_blank" rel="noopener"> <svg class="gh-icon" aria-hidden="true"><use href="#icon-github"/></svg> View on GitHub → </a></div>
+                    </div>
+                </article>
+                <article class="card project reveal">
+                    <div class="preview preview-game" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="project-body">
+                        <p class="project-meta">02 · Game</p> <h3>Mini Interactive Game</h3> <p class="project-sub">A playable game named "NEXUS-NEON"</p>
+                        <p>A futuristic, interactive puzzle game where players connect glowing energy nodes to solve challenging networks. Featuring immersive dark mode, neon visuals, smooth animations, and engaging gameplay.</p>
+                        <ul class="tags"><li>HTML</li><li>CSS</li><li>Transitions</li></ul>
+                        <div class="project-links"><a href=" https://soulinvoid.github.io/Nexus_Neon/" target="_blank" rel="noopener"> <svg class="gh-icon" aria-hidden="true"><use href="#icon-github"/></svg> View on GitHub → </a></div>
+                    </div>
+                </article>
+                <article class="card project reveal">
+                    <div class="preview preview-axion" aria-hidden="true"><span class="j-ring j-ring-1"></span><span class="j-ring j-ring-2"></span><span class="j-ring j-ring-3"></span><span class="j-letter">A</span></div>
+                    <div class="project-body">
+                        <p class="project-meta">03 · HTML/Python app</p> <h3>Axion AI Assistant</h3> <p class="project-sub">Speak, and it searches for you</p>
+                        <p>A Python voice assistant project. Open the GitHub repository to explore Axion and its source code.</p>
+                        <ul class="tags"><li>Python</li><li>Tkinter</li><li>Speech Recognition</li></ul>
+                        <div class="project-links"><a href="https://soulinvoid.github.io/Axion_Omega_V1/" target="_blank" rel="noopener">View Axion on GitHub →</a></div>
+                        <div class="project-links"><a href="https://github.com/SoulInVoid/Axion_AI_Assitant/blob/main/axion.py" target="_blank" rel="noopener">Check out its python code →</a></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="rest" class="section container">
+            <p class="section-label reveal">The rest of it</p>
+            <h2 class="section-title reveal">How I work</h2>
+            <div class="rest-grid">
+                <article class="card rest-card reveal"><h3>My loop</h3><ol class="loop"><li>Build</li><li>Test</li><li>Break</li><li>Debug</li><li>Improve</li><li>Repeat</li></ol></article>
+                <article class="card rest-card reveal">
+                    <h3>Next up</h3>
+                    <p class="muted">Moving from HTML &amp; CSS into JavaScript, React and Node.js, and building more things worth opening.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="section container contact">
+            <p class="section-label reveal">Contact me</p>
+                <div class="contact-info reveal">
+                    <h2>Let's build<br><span class="accent">something.</span></h2>
+                    <p class="contact-text">Got an idea, a project or just want to say hi? Drop me a message, or write to me directly at:</p>
+                    <a href="mailto:sohams1157@gmail.com" class="contact-link">sohams1157@gmail.com</a>
+                    <div class="contact-links"><a href="https://github.com/SoulInVoid" id="github-link" class="btn btn-primary" target="_blank" rel="noopener"> <svg class="gh-icon" aria-hidden="true"><use href="#icon-github"/></svg> github.com/SoulInVoid </a> <a href="mailto:sohams1157@gmail.com" class="btn btn-ghost">✉ Send an email</a></div>
+        </div>
+    </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Soham Singh · Scaler School of Technology</p>
+            <p>Built with HTML &amp; CSS ❤️ · Thanks for scrolling :)</p>
+            <div class="footer-links"><a href="https://github.com/SoulInVoid" target="_blank" rel="noopener">GitHub</a> <a href="#top" class="footer-logo" title="Back to top" aria-label="Back to top">SS.</a></div>
+        </div>
+    </footer>
+    <a href="https://github.com/SoulInVoid" class="gh-fab" target="_blank" rel="noopener" aria-label="Open Soham's GitHub profile">
+        <svg aria-hidden="true"><use href="#icon-github"/></svg>
+    </a>
+</body>
+</html>
